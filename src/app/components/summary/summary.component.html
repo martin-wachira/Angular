@@ -1,3 +1,7 @@
+<main class="mdl-layout__content" style="padding: 20px;" *ngIf="stocks">
+    <summary [stock]="stocks[0]"></summary>
+</main>
+
 <div class="mdl-card stock-card mdl-shadow--2dp" [ngClass]="{increase: isPositive(), decrease: isNegative()}" style="width: 100%;">
 <span>
     <div class="mdl-card__title">
@@ -10,3 +14,4 @@
     </div>
 </span>
 </div>
+

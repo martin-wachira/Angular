@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { StocksService, StockInterface } from './services/stocks.service';
-import { timingSafeEqual } from 'crypto';
+import { StocksService, StockInterface} from './services/stocks.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,7 @@ import { timingSafeEqual } from 'crypto';
 export class AppComponent {
   stocks: Array<StockInterface>;
   constructor(service: StocksService){
-    service.load({'AAPL'}).subscribe(stocks=>{
+    service.load(['AAPL']).subscribe(stocks => {
       this.stocks = stocks;
     });
   }  

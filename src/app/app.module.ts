@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { AuthorsService } from './authors/authors.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,8 @@ import { PatientsComponent } from './patients/patients.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SummaryComponent } from './components/summary/summary.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { StocksService } from './services/stocks.service';
 
 
 
@@ -24,6 +27,7 @@ import { SummaryComponent } from './components/summary/summary.component';
     ContactsComponent,
     PageNotFoundComponent,
     SummaryComponent,
+    DashboardComponent,
     
   ],
   imports: [
@@ -31,12 +35,14 @@ import { SummaryComponent } from './components/summary/summary.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,    
-    RouterModule
+    RouterModule,
+    HttpClient
  
   ],
   providers: [
     // PersonService
-    AuthorsService
+    AuthorsService,
+    StocksService
   ],
   bootstrap: [AppComponent]
 })
