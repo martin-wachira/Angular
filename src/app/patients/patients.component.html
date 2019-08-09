@@ -1,0 +1,40 @@
+<!-- <p>patients works!</p> -->
+
+<form [formGroup] = "patientForm" (ngSubmit)="onSubmit()">
+<h3>Personal Details</h3>
+<label for="fname">Patient Name <br>
+    <input type="text" formControlName="patientName">
+</label>
+<br><br>
+<label for="pid">
+    Patient Id <br>
+    <input type="text" formControlName="pID">
+</label>
+<br><br>
+<label for="depart">
+    Department <br>
+    <input type="text" formControlName="department">
+</label>
+<br><br>
+<label for="gender">
+    Gender <br>    
+        <input type="radio" value="male" name="gender">Male <br>
+        <input type="radio" value="female" name="gender">Female <br>    
+</label>
+
+<div [formGroupName] = "address">
+<h3>Address</h3>
+<label for="city">
+    City: <br>
+    <input type="text" formControlName="city">
+</label>
+<br> <br>
+<label for="state">
+    State: <br>
+    <input type="text" formControlName="state">
+</label>
+<br> <br>
+
+</div>
+<button (click)="updateProfile()" >Submit</button>
+</form>

@@ -1,0 +1,31 @@
+
+ <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+  <span class="mdl-layout-title">Stock Tracker</span>
+  <div class="mdl-layout-spacer"></div>
+  <nav class="mdl-navigation mdl-layout--large-screen-only">
+    <a class="mdl-navigation__link" routerLink="/contacts" routerLinkActive="active">myContacts</a> 
+    <a class="mdl-navigation__link" routerLink="/app-authors" routerLinkActive="active">myAuthors</a> 
+    <a class="mdl-navigation__link" routerLink="/app-patients" routerLinkActive="active">myPatients</a> 
+    <a class="mdl-navigation__link" routerLink="/try" routerLinkActive="active">myWildcard</a>
+  <a class="mdl-navigation__link">Dashboard</a>
+  <a class="mdl-navigation__link">Manage</a>
+  </nav>
+  </div>
+  </header>
+  <main class="mdl-layout__content" style="padding: 10px; margin-left: 50px">
+  </main>
+  </div>
+
+<h1>Angular App</h1>
+
+<router-outlet></router-outlet>
+<!-- <app-patients></app-patients> -->
+
+
+<!-- component selector ...commented by wcr -->
+<!-- <app-authors></app-authors>
+<app-patients></app-patients> -->
+<!-- <app-contacts></app-contacts> -->
+

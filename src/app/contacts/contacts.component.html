@@ -1,0 +1,91 @@
+<!-- <p>contacts works!</p> -->
+<div (load)=updateDetails()>
+    <label>
+        First Name: <br>
+        <input type="text" [formControl]="fname">
+      </label><br><br>
+        <label>
+        Second Name: <br>
+        <input type="text" [formControl]="sname">
+      </label><br><br>
+      <label for="email">
+          Email: <br>
+          <input type="text" [formControl] = "email">
+      </label><br><br>
+<button (click)="updateDetails()">Click Event</button>
+    </div> 
+    
+    <div>
+        <p>{{fname.value}}</p>
+        <p>{{sname.value}}</p>
+        <p>{{email.value}}</p>
+    </div>
+      <!-- <app-contacts></app-contacts> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form [formGroup] = "parentForm">
+<label for="fName">Email:
+    <input type="text" for="fName" name="fName" id="fName" [formControlName]="'fName'">
+</label><br>
+<label for="lName">
+    <input type="text" name="lName" id="lName" formControlName="lName">
+</label><br>
+<label for="email">
+    <input type="text" name="email" id="email" formControlName="email">
+</label><br>
+<ccf-child-input-component [parentForm="parentForm"]></ccf-child-input-component>
+<br>
+<button type="submit" [disabled]="parentForm.invalid">Submit This</button>
+</form> -->
+
+<!-- First Name: <br>
+<input type="text" name="fName" id=fName><br>
+Last Name: <br>
+<input type="text" name="Name" id=lName><br>
+Email: <br>
+<input type="text" name="email" id=email><br> -->
